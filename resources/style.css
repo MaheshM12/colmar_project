@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center
+}
+nav > .options{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.options a{
+    padding: 0.5em 0.5em;
+}
+.options a{
+    text-decoration: none;
+    color: var(darkgray);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+
+}
+.logo h2{
+    font-weight:bold;
+     color: var(darkgray);
+     display: inline;
+}
+.logo span{
+    font-weight: medium;
+     color: var(lightgray);
+       font-size: 1.1rem;
+}
+.container1{
+    display: flex;
+    background-color: lightgrey;
+    padding: 5% 3%;
+
+}
+.rightc1 button{
+    background-color: rgb(73, 72, 72);
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.leftc1 img{
+    width: 85%;
+}
+.rightc1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 3%;
+    padding: 0 3%;
+}
+.rightc1 h2,p{
+    padding: 5%;
+    color: darkgray;
+
+}
+.container2{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    color: darkgrey;
+}
+.leftc2{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.leftc2 img{
+    width: 100%;
+
+}
+.leftc2 .info{
+    padding-bottom: 2%;
+
+}
+.leftc2 .info h2,p{
+    padding: 2%;
+}
+.rightc2{
+    display: flex;
+    flex-direction: column;
+}
+.rightc2 img{
+    width: 10rem;
+}
+.rightc2 .main {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+.container2 .rightc2 #guest{
+    background-color: gray;
+}
+.rightc2 .main .para{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 1%;
+    padding: 5px;
+}
+.rightc2 .main .para span{
+   font-size: 25px;
+   color: black;
+
+}
+.rightc2 .main .para a{
+    text-decoration: none;
+    
+}
+.learning{
+padding: 32px 0;
+ background-color: rgb(201, 197, 197);
+}
+.learning h2{
+    color: rgb(80, 79, 79);
+    text-align: center;
+    margin-top: 32px;
+}
+.courses-container{
+    width: auto;
+    margin:0 40px ;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+.courses-container .courses{
+    display: flex;
+    flex-direction: column;
+    margin:32px 32px ;
+    align-items: center;
+    align-content: center;
+}
+.courses .info{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    align-content: center;
+    padding: 5%;
+}
+.courses .info p{
+    text-align: center;
+}
+.courses-container .courses img{
+    width: 100%;
+}
+.exhibite{
+   
+    background-color: lightgrey;
+    
+}
+.exhibite h2{
+    color: darkgray;
+    text-align: center;
+    margin-top: 32px;
+}
+.exhibite-container{
+    margin-left: 24px;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.exhibite-container .left video{
+    width: 100%;
+    height: auto;
+}
+.exhibite-container .left{
+    display: flex;
+    flex-direction: column;
+
+}
+.exhibite-container .right{
+    display: flex;
+    flex-direction:column;
+   
+}
+.exhibite-container .right .row1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    padding: 16px;
+    padding-right: 8px;
+    padding-bottom: 24px;
+}
+.exhibite-container .right .row2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    padding: 16px;
+    padding-right: 8px;
+    padding-bottom: 24px;
+}
+.right .row1 img{
+    width: 35%;
+    height: auto;
+
+}
+.right .row2 img{
+    width: 35%;
+    height: auto;
+}
+footer p{
+    text-align: right;
+}
+@media only screen and (min-width:580px) {
+   nav .mobile-navi{
+    display: none;
+   }    
+}
+@media only screen and (max-width:580px) {
+    nav > .logo , nav > .options{
+        display: none;
+    }   
+    nav .mobile-navi{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      align-items: center;
+      grid-gap: 70%;
+      margin: 2% 3%;
+    }
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5%;
+        margin:2% ;
+    }
+    .learning .courses-container{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+     .learning .courses-container .info p{
+        display:none;
+        
+    }
+    .exhibite-container{
+            display: grid;
+            grid-template-columns: 1fr;
+    
+    }
+
+    
+}
+
+
+
+
